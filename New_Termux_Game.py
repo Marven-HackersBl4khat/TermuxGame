@@ -1,16 +1,17 @@
+from colorama import *
 import sys
 import time
 topic = "*Alphabet world game*"
+print(Fore.RED+Style.DIM+Back.YELLOW+ topic.upper())
 topic_A = topic.upper()
-print (topic_A)
 
 import time
 time.sleep(1)
 for i in range(1,5):
-	time.sleep(2)
+	time.sleep(1)
 	print("|∆________∆-∆_________________________________∆____∆|")
 	print("____________________________________________________")
-time.sleep(2)
+time.sleep(1)
 for i in range(1,2):
 	print("_____________________")
 	print("Author:  Marvel")
@@ -21,24 +22,30 @@ for i in range(1,2):
 	time.sleep(2)
 	print("Tool: Termux_Game")
 	print("______________________")
-	time.sleep(2)
+	time.sleep(1)
 for i in range(1,5):
-	time.sleep(2)
+	time.sleep(1)
 	print("|∆________∆-∆_________________________________∆____∆|")
 	print("____________________________________________________")
+print(Fore.RESET)
+print(Back.RESET)
+print(Back.RED)
+print("................")
+print(Back.BLUE)
+print("................")
 print()
-print()
-print()
-
 print()
 user_n = input("insert your name: ")
 print(f"{user_n} do you really wanna play this game?")
+print(Back.BLUE)
 user_choice = input(": ")
 if user_choice == "yes": 
+ print(Back.RESET) 
  print()
  import time
 import sys
 for I in range (1,5):
+ print(Back.RED)
  time.sleep(1)
  print ("loading_game...5%")
 for I in range (5,15):
@@ -49,13 +56,16 @@ for I in range (15,22):
  print ("loading_game...30%")
 for I in range (22,72):
  time.sleep(0.2)
+ print(Back.BLUE)
  print ("loading_game...70%")
 for I in range (72,89):
+ print(Back.GREEN)
  time.sleep(0.1)
  print ("loading_game...90%")
 for I in range (89,100):
  print ("loading_game...99%")
 print ("loading_game...100%")
+print(Back.BLUE)
 print()
 user_n = input ("insert your real name to start game now!\n: ")
 import time
@@ -148,6 +158,7 @@ while True:
   for I in range (2,6):
    print (f"loading results for '{user_choice}'...")
    time.sleep(1)
+  print(Back.RED)
   print ("V is for 'van'\n")
  elif user_choice == "w":
   print (f"{user_choice} is for 'wagon'\n")
@@ -159,6 +170,7 @@ while True:
   for I in range (5,9):
    print (f"loading_results_for '{user_choice}'")
    time.sleep(0.9)
+  print(Back.BLUE)
   print (f"{user_choice} is for 'Zoo'\n")
  else:
   print (f" '{user_choice}' is not defined")
